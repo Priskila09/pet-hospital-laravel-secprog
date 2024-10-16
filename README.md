@@ -34,7 +34,7 @@ To set up the Pet Hospital Management System for development or testing environm
 
 1. Clone the repository:
     ```
-    git clone https://github.com/Priskila09/pet-hospital-laravel.git
+    git clone https://github.com/Priskila09/pet-hospital-laravel-secprog.git
     ```
 2. Navigate to the project directory:
     ```
