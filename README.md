@@ -2,7 +2,7 @@ Pet Hospital Website-Based Platform
 
 Overview
 
-Pet Hospital is a website-based platform that is designed to help pet owners manage their pet healthcare and supplies conveniently, from anywhere and anytime. This website enables pet owners to make reservation for their pet online and purchasing their pet supplies online, ensuring a seamless services for the pet owners.
+Pet Hospital is a website-based platform that is designed to help pet owners manage their pet healthcare conveniently, from anywhere and anytime. This website enables pet owners to make reservation for their pet online, ensuring a seamless services for the pet owners.
 
 Features
 
@@ -10,11 +10,6 @@ Online Booking for Reservations
 
 -   Appointment Scheduling: Pet owners can easily schedule appointments for their pets using our intuitive booking interface.
 -   Service Selection: Users can select from a variety of services, including general check-ups, vaccinations, emergency care, and specialist consultations.
-
-Online Shop
-
--   Product Catalog: A wide range of pet care products, including food, toys, and health supplements, are available for purchase.
--   Secure Checkout: A secure payment is integrated to ensure safe transactions.
 
 Additional Features
 
@@ -52,7 +47,7 @@ To set up the Pet Hospital Management System for development or testing environm
     ```
     php artisan migrate --seed
     ```
-6. **Start the development server:**
+6. Start the development server:
     ```
     php artisan serve
     ```
@@ -60,11 +55,10 @@ To set up the Pet Hospital Management System for development or testing environm
 
 Usage
 
-To book an appointment or purchase products:
+To book an appointment:
 
 1. Register/Login: Users must register or log in to access personalized features.
 2. Booking: Navigate to the 'Book Reservation' section to select a service and schedule a time.
-3. Shopping: Visit the 'Shop' section to browse products and add items to your cart for purchase.
 
 ## Contribution
 
