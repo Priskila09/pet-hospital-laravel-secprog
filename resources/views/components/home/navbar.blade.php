@@ -19,20 +19,11 @@
                         href="{{ route('about') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('home.shop') ? 'active' : '' }}"
-                        href="{{ route('home.shop') }}">Shop</a>
-                </li>
-                <li class="nav-item">
                     <a class="btn btn-primary px-4" href="{{ route('home.reservation') }}">
                         <i class="bx bx-calendar"></i> Reservation
                     </a>
                 </li>
                 @auth
-                    <li class="nav-item">
-                        <a class="btn btn-light border" href="{{ route('home.cart') }}">
-                            <i class="bx bx-cart"></i> Cart
-                        </a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="btn btn-light border px-4 dropdown-toggle" href="#" id="navbarDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
