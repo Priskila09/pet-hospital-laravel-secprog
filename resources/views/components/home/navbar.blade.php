@@ -33,7 +33,6 @@
                             @if (Auth::user()->roles == 'Admin')
                                 <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}">Admin Dashboard</a></li>
                             @endif
-                            <li><a class="dropdown-item" href="{{ route('home.order.history') }}">Order History</a></li>
                             <li><a class="dropdown-item" href="{{ route('profile.index') }}">Profile Setting</a></li>
                             <li>
                                 <hr class="dropdown-divider">

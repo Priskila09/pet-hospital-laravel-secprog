@@ -22,14 +22,5 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 col-lg-3">
-            <div class="card border-0 rounded-3">
-                <div class="card-body p-4">
-                    <i class="bx bx-money-withdraw fs-1 text-primary"></i>
-                    <p class="mb-1 mt-2 text-secondary">Total Income</p>
-                    <h3 class="mb-0 text-dark fw-semibold">Rp. {{ $totalIncome }}</h3>
-                </div>
-            </div>
-        </div>
     </div>
 @endsection
