@@ -18,7 +18,9 @@ Route::get('about-us', [HomeController::class, 'about'])->name('about');
 Route::prefix('/')->middleware('auth')->group(function () {
 
     Route::get('reservation', [ReservationController::class, 'index'])->name('home.reservation');
-    Route::post('reservation', [ReservationController::class, 'store'])->name('home.reservation.store');
+    Route::post('reservation', [ReservationController::class, 'store'])->name('home.reservation.store')
+        ->middleware('throttle:8,1')  // Apply throttle middleware to limit requests
+        ->name('home.reservation.store');
 
     Route::resource('profile', ProfileController::class);
     Route::resource('pets', PetController::class);
