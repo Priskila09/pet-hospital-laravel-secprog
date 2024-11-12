@@ -8,8 +8,8 @@
             <div class="card border-0 rounded-3">
                 <div class="card-body p-4">
                     <i class="bx bxs-user fs-1 text-primary"></i>
-                    <p class="mb-1 mt-2 text-secondary">Total Customers</p>
-                    <h3 class="mb-0 text-dark fw-semibold">{{ $totalCustomers }} Customers</h3>
+                    <p class="mb-1 mt-2 text-secondary">Total Users</p>
+                    <h3 class="mb-0 text-dark fw-semibold">{{ $totalCustomers }} Users</h3>
                 </div>
             </div>
         </div>

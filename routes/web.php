@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\ReservationController as AdminReservationController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PetController;
 use App\Http\Controllers\ProfileController;
@@ -30,6 +31,10 @@ Route::prefix('admin')->middleware(['auth', isAdmin::class])->group(function () 
     Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard'); // name digunakan untuk pemanggilan di controller dan view
     Route::resource('dokter', DoctorController::class); // get, post, patch, put, delete
     Route::resource('reservasi', AdminReservationController::class);
+
+    Route::get('users', [UserController::class, 'index'])->name('admin.users.index'); // List users
+    Route::get('users/{user}/edit', [UserController::class, 'edit'])->name('admin.users.edit');
+    Route::put('users/{user}', [UserController::class, 'update'])->name('admin.users.update');
 });
 
 Auth::routes();

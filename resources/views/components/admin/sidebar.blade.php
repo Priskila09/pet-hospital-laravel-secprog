@@ -15,9 +15,7 @@
             <i class="bx bxs-dashboard"></i> Dashboard
         </a>
 
-
-
-        <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Reservation</p>
+        <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Management</p>
         <a href="{{ route('dokter.index') }}"
             class="link-menu btn {{ request()->is('admin/doctors*') ? 'active' : '' }}">
             <i class='bx bx-user-pin'></i> Doctors
@@ -26,6 +24,11 @@
             class="link-menu btn {{ request()->is('admin/reservasi*') ? 'active' : '' }}">
             <i class="bx bxs-calendar"></i> Reservation
         </a>
+        <a href="{{ route('admin.users.index') }}"
+            class="link-menu btn {{ request()->is('admin/users*') ? 'active' : '' }}">
+            <i class="bx bxs-user"></i> Users
+        </a>
+
         <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Setting</p>
         <a href="{{ route('homepage') }}" class="link-menu btn">
             <i class="bx bx-cog"></i> Pet Hospital
@@ -37,6 +40,7 @@
     </div>
 </div>
 
+<!-- Offcanvas Sidebar for Mobile -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="navMenu" aria-labelledby="navMenuLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="navMenuLabel">Main</h5>
@@ -50,8 +54,7 @@
                 <i class="bx bxs-dashboard"></i> Dashboard
             </a>
 
-
-            <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Reservation</p>
+            <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Management</p>
             <a href="{{ route('dokter.index') }}"
                 class="link-menu btn {{ request()->is('admin/doctors*') ? 'active' : '' }}">
                 <i class='bx bx-user-pin'></i> Doctor
@@ -60,6 +63,11 @@
                 class="link-menu btn {{ request()->is('admin/reservasi*') ? 'active' : '' }}">
                 <i class="bx bxs-calendar"></i> Reservation
             </a>
+            <a href="{{ route('admin.users.index') }}"
+                class="link-menu btn {{ request()->is('admin/users*') ? 'active' : '' }}">
+                <i class="bx bxs-user"></i> Users
+            </a>
+
             <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Setting</p>
             <a href="{{ route('homepage') }}" class="link-menu btn">
                 <i class="bx bx-cog"></i> Pet Hospital
