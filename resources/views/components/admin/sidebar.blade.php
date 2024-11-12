@@ -15,15 +15,7 @@
             <i class="bx bxs-dashboard"></i> Dashboard
         </a>
 
-        {{-- <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Shop</p>
-        <a href="{{ route('produk.index') }}"
-            class="link-menu btn {{ request()->is('admin/produk*') ? 'active' : '' }}">
-            <i class='bx bx-box'></i> Product
-        </a>
-        <a href="{{ route('orders.index') }}"
-            class="link-menu btn {{ request()->is('admin/orders*') ? 'active' : '' }}">
-            <i class='bx bx-store'></i> Order
-        </a> --}}
+
 
         <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Reservation</p>
         <a href="{{ route('dokter.index') }}"
@@ -58,15 +50,6 @@
                 <i class="bx bxs-dashboard"></i> Dashboard
             </a>
 
-            <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Shop</p>
-            <a href="{{ route('produk.index') }}"
-                class="link-menu btn {{ request()->is('admin/produk*') ? 'active' : '' }}">
-                <i class='bx bx-box'></i> Product
-            </a>
-            <a href="{{ route('orders.index') }}"
-                class="link-menu btn {{ request()->is('admin/orders*') ? 'active' : '' }}">
-                <i class='bx bx-store'></i> Order
-            </a>
 
             <p class="mt-4 mb-2 text-secondary fw-semibold fs-7">Reservation</p>
             <a href="{{ route('dokter.index') }}"
